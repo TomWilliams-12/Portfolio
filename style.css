@@ -10,7 +10,7 @@
   }
 
 nav{
-    margin: 10px;
+    padding: 10px;
 }
 
 a{
@@ -29,7 +29,7 @@ a:hover {
     flex-flow: row wrap;
     flex-basis: 100%;
     align-items: center;
-    margin: 10px 15px;
+    margin: 0 15px;
     font-size: 22px;
 }
 
@@ -46,7 +46,7 @@ a:hover {
     display: none;
 }
 .menu-item.active{
-    display:block;
+    display: block;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -90,20 +90,23 @@ a:hover {
 .header {
     background-image: url(./res/img/main.jpg);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
-    height: 30em;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+.carousel {
     display:grid;
     color: white;
-    width: 100%;
-    border-top: 1px solid black;
-    margin-bottom: 10px;
+    height: 40em;
 }
 
 .headings {
     align-self: center;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 
 .portfolio {
@@ -140,7 +143,7 @@ a:hover {
     }
 
     .header {
-        background-size: 100%;
+        background-size: auto 100%;
     }
     .portfolio-item {
         flex-basis: 44%;
@@ -166,7 +169,7 @@ a:hover {
     }
 
     .header {
-        background-size: 100%;
+        background-size: cover;
     }
     .headings{
         font-size: 30px;
