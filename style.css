@@ -15,7 +15,7 @@ nav{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -31,6 +31,7 @@ a:hover {
     align-items: center;
     margin: 0 15px;
     font-size: 22px;
+    color:white;
 }
 
 .logo {
@@ -44,19 +45,20 @@ a:hover {
     text-align: center;
     flex-basis: 100%;
     display: none;
+    
 }
 .menu-item.active{
     display: block;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .first-item.active {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
 .bars{
-    background: black;
+    background: white;
     display: inline-block;
     height: 2px;
     position: absolute;
@@ -65,7 +67,7 @@ a:hover {
 }
 
 .bars::before, .bars::after{
-    background: black;
+    background: white;
     content:"";
     display: inline-block;
     height: 2px;
@@ -97,16 +99,27 @@ a:hover {
 
 }
 
-.carousel {
+.banner {
     display:grid;
     color: white;
-    height: 40em;
+    height: 20em;
 }
 
 .headings {
     align-self: center;
     text-align: center;
-    padding-bottom: 150px;
+}
+
+.about-me{
+    padding: 0px 15px;
+    margin: 20px 0px 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about-heading{
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .portfolio {
@@ -117,6 +130,8 @@ a:hover {
 }
 .portfolio-item{
     flex-basis: 100%;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .portfolio-heading {
@@ -148,6 +163,14 @@ a:hover {
     .portfolio-item {
         flex-basis: 44%;
     }
+    
+    .headings {
+        font-size: 24px;
+    }
+
+    .banner {
+        height: 30em;
+    }
 }
 
 
@@ -177,5 +200,9 @@ a:hover {
 
     .portfolio-item {
         flex-basis: 30%;
+    }
+
+    .banner {
+        height: 40em;
     }
 }
