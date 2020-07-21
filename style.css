@@ -180,6 +180,14 @@ a:hover {
     text-decoration: none;
 }
 
+footer {
+    text-align: center;
+    height: 2em;
+    background-color: #252525;
+    color: white;
+    padding-top: 8px;
+}
+
 /* TABLET MEDIA QUERIES */
 @media all and (min-width: 502px){
     .menu {
